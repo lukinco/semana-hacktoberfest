@@ -20,3 +20,9 @@ export const menu = [
     url: 'https://lukin.co',
   },
 ]
+
+export const hero = {
+  title: 'Semana Hacktoberfest na Lukin Co.',
+  text: 'Quer participar da Hacktoberfest mas não sabe por onde começar? A Lukin preparou um guia especial para você!',
+  cta: 'Saiba mais',
+}

@@ -23,8 +23,14 @@ const Wrapper = styled.header`
   height: 12rem;
   padding: 4rem 1.5rem;
   width: 100%;
-  max-width: 131.5rem;
+  max-width: 134.5rem;
   margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: ${({ theme }) => theme.colors.background};
 `
 
 const Logo = styled.img`
