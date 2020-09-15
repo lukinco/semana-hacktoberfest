@@ -22,5 +22,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    background-color: ${({ theme }) => theme.colors.background};
   }
 `
