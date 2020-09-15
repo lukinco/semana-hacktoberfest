@@ -1,4 +1,11 @@
-import { HeadComponent, Header, Hero, Footer, Container } from 'ui'
+import {
+  HeadComponent,
+  Header,
+  Container,
+  Hero,
+  About,
+  Footer,
+} from 'ui'
 
 const Home = () => {
   return (
@@ -7,6 +14,7 @@ const Home = () => {
       <Header />
       <Container>
         <Hero />
+        <About />
       </Container>
       <Footer />
     </>

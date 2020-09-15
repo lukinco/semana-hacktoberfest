@@ -19,19 +19,18 @@ const Wrapper = styled.section`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 14.5rem;
+  align-items: center;
   height: 100vh;
-  padding: 20rem 0;
+  padding: 20rem 0 20rem;
 `
 
 const Title = styled.h2`
   font-size: 4.2rem;
   font-weight: 700;
-  margin: 0;
   padding: 5rem 0 2rem;
 `
 
 const Text = styled.p`
-  margin: 0;
   padding-bottom: 3rem;
   font-size: 2.2rem;
   line-height: 1.5;
