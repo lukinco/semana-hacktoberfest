@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Container } from 'ui'
+import { Container, media } from 'ui'
 import { social } from 'resources/content'
 
 export const Footer = () => {
@@ -36,11 +36,17 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
 `
 
 const Copyright = styled.p`
   font-size: 1.6rem;
   font-weight: 600;
+
+  ${media.lessThan('sm')`
+    order: 3;
+  `}
 `
 
 const Social = styled.div`

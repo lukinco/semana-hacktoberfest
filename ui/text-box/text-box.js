@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h3`
-  font-size: 3.6rem;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -46,7 +46,7 @@ const Title = styled.h3`
 `
 
 const Text = styled.p`
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
   line-height: 1.7;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
 `

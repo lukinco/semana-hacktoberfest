@@ -44,6 +44,6 @@ const VideoWrapper = styled.div`
 const Title = styled.h4`
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
   margin-bottom: 1.5rem;
 `

@@ -32,7 +32,7 @@ const Wrapper = styled.section`
 `
 
 const Title = styled.section`
-  font-size: 3.2rem;
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
   padding-left: 2.5rem;
   position: relative;
   font-weight: 600;
@@ -41,12 +41,25 @@ const Title = styled.section`
   &:before {
     content: '';
     position: absolute;
-    right: 100%;
     top: calc(50% - .1rem);
     height: .2rem;
     width: 3.5rem;
     background-color: ${({ theme }) => theme.colors.primary};
   }
+
+  ${media.greaterThan('md')`
+    &:before {
+      right: 100%;
+    }
+  `}
+
+  ${media.lessThan('md')`
+    padding-left: 6rem;
+
+    &:before {
+      left: 0;
+    }
+  `}
 `
 
 const Grid = styled.div`

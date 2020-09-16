@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { darken, rgba } from 'polished'
+
+import { media } from 'ui'
 import { hero } from 'resources/content'
 
 export const Hero = () => {
@@ -10,36 +12,49 @@ export const Hero = () => {
         <Text>{hero.text}</Text>
         <CallToAction>{hero.cta}</CallToAction>
       </div>
-      <img src='./hero.svg' alt={hero.alt} />
+      <Illustration src='./hero.svg' alt={hero.alt} />
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 14.5rem;
   align-items: center;
-  height: 100vh;
-  padding: 20rem 0 20rem;
+  padding: 12rem 0 9rem;
+
+  ${media.greaterThan('md')`
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 14.5rem;
+    padding: 20rem 0 20rem;
+  `}
+`
+
+const Illustration = styled.img`
+  display: none;
+  width: 100%;
+
+  ${media.greaterThan('md')`
+    display: block;
+  `}
 `
 
 const Title = styled.h2`
-  font-size: 4.2rem;
+  font-size: clamp(2.6rem, 7vw, 4.2rem);
   font-weight: 700;
   padding: 5rem 0 2rem;
 `
 
 const Text = styled.p`
   padding-bottom: 3rem;
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
   line-height: 1.5;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
 `
 
 const CallToAction = styled.a`
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   font-weight: 600;
   border-radius: .3rem;
   display: inline-block;
