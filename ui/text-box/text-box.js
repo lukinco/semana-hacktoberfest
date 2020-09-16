@@ -2,11 +2,13 @@ import t from 'prop-types'
 import styled from 'styled-components'
 import { rgba } from 'polished'
 
+import { insertComponentsIntoText, components } from 'resources'
+
 export const TextBox = ({ title, text, invert }) => {
   return (
     <Wrapper>
       <Title invert={invert}>{title}</Title>
-      <Text>{text}</Text>
+      <Text>{insertComponentsIntoText(text, components)}</Text>
     </Wrapper>
   )
 }
@@ -49,4 +51,9 @@ const Text = styled.p`
   font-size: clamp(1.6rem, 4vw, 2rem);
   line-height: 1.7;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
+`
+
+export const BoldText = styled.b`
+font-weight: 600;
+color: ${({ theme }) => theme.colors.primary};
 `

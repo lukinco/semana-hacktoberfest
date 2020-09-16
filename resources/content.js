@@ -40,13 +40,13 @@ export const about = [
     id: idGen(),
     invert: false,
     title: 'O que é?',
-    text: 'O Hacktoberfest é um mês de celebração open source criado pela DigitalOcean em parceria com o GitHub. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro a 31 de Outubro.',
+    text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro a 31 de Outubro.',
   },
   {
     id: idGen(),
     invert: true,
     title: 'Como participar',
-    text: 'Para ajudar você que quer participar do Hacktoberfest mas não sabe por onde começar, nós da Lukin preparamos uma série de vídeos de como contribuir em projetos open source utilizando Git e Github. Acompanhe essa série de videos produzida pelo @fdaciuk',
+    text: 'Para ajudar você que quer participar do Hacktoberfest mas não sabe por onde começar, nós da Lukin preparamos uma série de vídeos de como contribuir em projetos open source utilizando Git e Github. Acompanhe essa série de videos produzida pelo [[fdaciuk]]',
   },
 ]
 
@@ -74,7 +74,7 @@ export const playlist = {
 
 export const issueList = {
   title: 'Onde contribuir?',
-  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de iniciante a avançado. Se liga nessa seleção preparada especialmente para a semana Hacktoberfest:',
+  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]]. Se liga nessa seleção preparada especialmente para a semana Hacktoberfest:',
   items: [
     {
       id: idGen(),
@@ -103,7 +103,7 @@ export const issueList = {
       title: 'Notification and sound alert',
       description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
       stars: 100,
-      lang: 'ReScript',
+      lang: 'Javascript',
       url: 'https://lukin.co',
     },
     {
