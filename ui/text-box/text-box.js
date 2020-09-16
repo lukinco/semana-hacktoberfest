@@ -2,7 +2,17 @@ import t from 'prop-types'
 import styled from 'styled-components'
 import { rgba } from 'polished'
 
-import { insertComponentsIntoText, components } from 'resources'
+import { Link, BoldText } from 'ui'
+import { insertComponentsIntoText } from 'resources'
+
+export const components = {
+  hacktoberfest: <Link key='hacktoberfest' href='https://hacktoberfest.digitalocean.com/'>Hacktoberfest</Link>,
+  digitalocean: <Link key='digitalocean' href='https://www.digitalocean.com/'>DigitalOcean</Link>,
+  github: <Link key='github' href='https://www.github.com/'>GitHub</Link>,
+  fdaciuk: <Link key='@fdaciuk' href='https://twitter.com/fdaciuk'>@fdaciuk</Link>,
+  beginner: <BoldText key='beginner'>iniciante</BoldText>,
+  advanced: <BoldText key='advanced'>Avançado</BoldText>,
+}
 
 export const TextBox = ({ title, text, invert }) => {
   return (
@@ -51,9 +61,4 @@ const Text = styled.p`
   font-size: clamp(1.6rem, 4vw, 2rem);
   line-height: 1.7;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
-`
-
-export const BoldText = styled.b`
-font-weight: 600;
-color: ${({ theme }) => theme.colors.primary};
 `
