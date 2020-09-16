@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import t from 'prop-types'
 import { lighten, rgba } from 'polished'
 
+import { BoxIcon, StarIcon, LangIcon } from 'ui'
+
 export const IssueCard = ({
   repo,
   position,
@@ -14,7 +16,7 @@ export const IssueCard = ({
   return (
     <Card>
       <Header>
-        <Repo>{repo}</Repo>
+        <Repo><BoxIcon /> {repo}</Repo>
         <Position>{position}</Position>
       </Header>
       <Content>
@@ -22,8 +24,8 @@ export const IssueCard = ({
         <Text>{description}</Text>
       </Content>
       <Footer>
-        <Info>{stars}</Info>
-        <Info>{lang}</Info>
+        <Info><StarIcon />  {stars}</Info>
+        <Info><LangIcon lang={lang.toLowerCase()} />{lang}</Info>
       </Footer>
     </Card>
   )
@@ -35,7 +37,7 @@ IssueCard.propTypes = {
   title: t.string.isRequired,
   description: t.string.isRequired,
   stars: t.number.isRequired,
-  lang: t.oneOf(['Javascript', 'Rescript']).isRequired,
+  lang: t.oneOf(['Javascript', 'ReScript']).isRequired,
   url: t.string.isRequired,
 }
 
@@ -44,16 +46,19 @@ const Card = styled.a`
   background-color: ${({ theme }) => lighten(0.07, theme.colors.background)};
   transition: background-color .25s ease;
   display: block;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: ${({ theme }) => lighten(0.09, theme.colors.background)};
+    background-color: ${({ theme }) => lighten(0.15, theme.colors.background)};
   }
 `
 
 const Repo = styled.div`
   font-size: 1.4rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
 `
 
@@ -86,12 +91,19 @@ const Text = styled.p`
 `
 
 const Footer = styled.footer`
-  margin-left: auto;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `
 
 const Info = styled.span`
   font-size: 1.4rem;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
 `

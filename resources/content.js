@@ -83,7 +83,7 @@ export const issueList = {
       title: 'Notification and sound alert',
       description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
       stars: 100,
-      lang: 'Rescript',
+      lang: 'ReScript',
       url: 'https://lukin.co',
     },
     {
@@ -93,7 +93,7 @@ export const issueList = {
       title: 'Notification and sound alert',
       description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
       stars: 100,
-      lang: 'Rescript',
+      lang: 'ReScript',
       url: 'https://lukin.co',
     },
     {
@@ -103,7 +103,7 @@ export const issueList = {
       title: 'Notification and sound alert',
       description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
       stars: 100,
-      lang: 'Rescript',
+      lang: 'ReScript',
       url: 'https://lukin.co',
     },
     {
@@ -113,7 +113,7 @@ export const issueList = {
       title: 'Notification and sound alert',
       description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
       stars: 100,
-      lang: 'Rescript',
+      lang: 'ReScript',
       url: 'https://lukin.co',
     },
   ],
