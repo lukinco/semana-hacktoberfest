@@ -13,7 +13,7 @@ const HeadComponent = () => {
 
       <meta property='og:url' content='https://hacktoberfest.lukin.co' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Educaly' />
+      <meta property='og:title' content='Semana Hacktoberfest' />
       <meta property='og:image' content='https://hacktoberfest.lukin.co/logo-vertical.png' />
       <meta property='og:image:alt' content='' />
       <meta property='og:description' content='' />

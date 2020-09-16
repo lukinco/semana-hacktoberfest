@@ -24,6 +24,7 @@ export const Playlist = () => {
 const Wrapper = styled.section`
   padding: 6rem 10.5rem;
   background-color: ${({ theme }) => lighten(0.07, theme.colors.background)};
+  margin-bottom: 19rem;
 
   ${media.lessThan('md')`
     padding: 6rem 1.5rem;
@@ -50,6 +51,6 @@ const Title = styled.section`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   grid-gap: 6.5rem 11.5rem;
 `

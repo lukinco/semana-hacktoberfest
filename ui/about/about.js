@@ -6,9 +6,9 @@ import { about } from 'resources/content'
 export const About = () => {
   return (
     <Wrapper>
-      {about.map(({ title, text, invert }) => (
+      {about.map(({ id, title, text, invert }) => (
         <TextBox
-          key={title}
+          key={id}
           title={title}
           text={text}
           invert={invert}

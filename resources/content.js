@@ -1,21 +1,28 @@
+const idGen = () => '_' + Math.random().toString(36).substr(2, 9)
+
 export const menu = [
   {
+    id: idGen(),
     title: 'O que é?',
     url: '#',
   },
   {
+    id: idGen(),
     title: 'Como participar',
     url: '#',
   },
   {
+    id: idGen(),
     title: 'Contribua',
     url: '#',
   },
   {
+    id: idGen(),
     title: 'Acompanhe',
     url: '#',
   },
   {
+    id: idGen(),
     title: 'Conheça a Lukin Co.',
     url: 'https://lukin.co',
   },
@@ -30,10 +37,13 @@ export const hero = {
 
 export const about = [
   {
+    id: idGen(),
+    invert: false,
     title: 'O que é?',
     text: 'O Hacktoberfest é um mês de celebração open source criado pela DigitalOcean em parceria com o GitHub. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro a 31 de Outubro.',
   },
   {
+    id: idGen(),
     invert: true,
     title: 'Como participar',
     text: 'Para ajudar você que quer participar do Hacktoberfest mas não sabe por onde começar, nós da Lukin preparamos uma série de vídeos de como contribuir em projetos open source utilizando Git e Github. Acompanhe essa série de videos produzida pelo @fdaciuk',
@@ -61,3 +71,65 @@ export const playlist = {
     },
   ],
 }
+
+export const issueList = {
+  title: 'Onde contribuir?',
+  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de iniciante a avançado. Se liga nessa seleção preparada especialmente para a semana Hacktoberfest:',
+  items: [
+    {
+      id: idGen(),
+      repo: 'lukin/timerlab',
+      position: '#04',
+      title: 'Notification and sound alert',
+      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
+      stars: 100,
+      lang: 'Rescript',
+      url: 'https://lukin.co',
+    },
+    {
+      id: idGen(),
+      repo: 'lukin/timerlab',
+      position: '#04',
+      title: 'Notification and sound alert',
+      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
+      stars: 100,
+      lang: 'Rescript',
+      url: 'https://lukin.co',
+    },
+    {
+      id: idGen(),
+      repo: 'lukin/timerlab',
+      position: '#04',
+      title: 'Notification and sound alert',
+      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
+      stars: 100,
+      lang: 'Rescript',
+      url: 'https://lukin.co',
+    },
+    {
+      id: idGen(),
+      repo: 'lukin/timerlab',
+      position: '#04',
+      title: 'Notification and sound alert',
+      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
+      stars: 100,
+      lang: 'Rescript',
+      url: 'https://lukin.co',
+    },
+  ],
+}
+
+export const social = [
+  {
+    icon: './social-github.svg',
+    url: 'https://github.com/lukinco',
+  },
+  {
+    icon: './social-twitter.svg',
+    url: 'https://twitter.com/lukin_co',
+  },
+  {
+    icon: './social-instagram.svg',
+    url: 'https://instagram.com/lukinco',
+  },
+]
