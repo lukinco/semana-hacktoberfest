@@ -39,3 +39,25 @@ export const about = [
     text: 'Para ajudar você que quer participar do Hacktoberfest mas não sabe por onde começar, nós da Lukin preparamos uma série de vídeos de como contribuir em projetos open source utilizando Git e Github. Acompanhe essa série de videos produzida pelo @fdaciuk',
   },
 ]
+
+export const playlist = {
+  title: 'Playlist de vídeos',
+  items: [
+    {
+      title: '#01 Introdução',
+      videoId: 'EG-UFuYmQCA',
+    },
+    {
+      title: '#02 Iniciando com Git',
+      videoId: 'yb-fBApqWSw',
+    },
+    {
+      title: '#03 Conexão Git - Github',
+      videoId: 'r-8isv_TnVA',
+    },
+    {
+      title: '#04 Como contribuir em projetos',
+      videoId: 'my9wmfOkIP4',
+    },
+  ],
+}

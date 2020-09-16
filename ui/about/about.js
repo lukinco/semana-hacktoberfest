@@ -19,7 +19,7 @@ export const About = () => {
 }
 
 const Wrapper = styled.section`
-  > *:not(:first-child) {
-    margin-top: 19rem;
+  > * {
+    margin-bottom: 19rem;
   }
 `

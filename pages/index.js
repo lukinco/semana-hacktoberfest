@@ -5,6 +5,7 @@ import {
   Hero,
   About,
   Footer,
+  Playlist,
 } from 'ui'
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Container>
         <Hero />
         <About />
+        <Playlist />
       </Container>
       <Footer />
     </>
