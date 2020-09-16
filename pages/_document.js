@@ -1,6 +1,5 @@
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { ssrMediaStyles } from 'ui'
 
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
@@ -19,10 +18,6 @@ export default class MyDocument extends Document {
         ...initialProps,
         styles: (
           <>
-            <style
-              type='text/css'
-              dangerouslySetInnerHTML={{ __html: ssrMediaStyles }}
-            />
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>

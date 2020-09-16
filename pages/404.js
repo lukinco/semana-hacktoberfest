@@ -7,7 +7,7 @@ export default function Custom404 () {
     <Wrapper>
       <HeadComponent />
       <Title>404 - Página não encontrada</Title>
-      <Link prefetch href='/' passHref>
+      <Link href='/' passHref>
         <BackButton>Voltar para a homepage</BackButton>
       </Link>
     </Wrapper>
