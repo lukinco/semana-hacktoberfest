@@ -9,6 +9,7 @@ export const About = () => {
       {about.map(({ id, title, text, invert }) => (
         <TextBox
           key={id}
+          id={id}
           title={title}
           text={text}
           invert={invert}

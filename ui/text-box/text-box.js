@@ -14,9 +14,9 @@ export const components = {
   advanced: <BoldText key='advanced'>Avançado</BoldText>,
 }
 
-export const TextBox = ({ title, text, invert }) => {
+export const TextBox = ({ id, title, text, invert }) => {
   return (
-    <Wrapper>
+    <Wrapper id={id}>
       <Title invert={invert}>{title}</Title>
       <Text>{insertComponentsIntoText(text, components)}</Text>
     </Wrapper>
@@ -24,6 +24,7 @@ export const TextBox = ({ title, text, invert }) => {
 }
 
 TextBox.propTypes = {
+  id: t.string.isRequired,
   title: t.string.isRequired,
   text: t.string.isRequired,
   invert: t.bool,

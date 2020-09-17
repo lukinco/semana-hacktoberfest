@@ -4,22 +4,22 @@ export const menu = [
   {
     id: idGen(),
     title: 'O que é?',
-    url: '#',
+    url: '#o-que-e',
   },
   {
     id: idGen(),
     title: 'Como participar',
-    url: '#',
+    url: '#como-participar',
   },
   {
     id: idGen(),
     title: 'Contribua',
-    url: '#',
+    url: '#contribua',
   },
   {
     id: idGen(),
     title: 'Acompanhe',
-    url: '#',
+    url: '#acompanhe',
   },
   {
     id: idGen(),
@@ -37,13 +37,13 @@ export const hero = {
 
 export const about = [
   {
-    id: idGen(),
+    id: 'o-que-e',
     invert: false,
     title: 'O que é?',
     text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro a 31 de Outubro.',
   },
   {
-    id: idGen(),
+    id: 'como-participar',
     invert: true,
     title: 'Como participar',
     text: 'Para ajudar você que quer participar do Hacktoberfest mas não sabe por onde começar, nós da Lukin preparamos uma série de vídeos de como contribuir em projetos open source utilizando Git e Github. Acompanhe essa série de videos produzida pelo [[fdaciuk]]',
