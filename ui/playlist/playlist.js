@@ -64,6 +64,9 @@ const Title = styled.section`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   grid-gap: 6.5rem 11.5rem;
+
+  ${media.greaterThan('sm')`
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  `}
 `

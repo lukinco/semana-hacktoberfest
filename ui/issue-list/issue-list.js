@@ -5,7 +5,7 @@ import { issueList } from 'resources/content'
 
 export const IssueList = () => {
   return (
-    <Wrapper>
+    <Wrapper id='contribua'>
       <TextBox title={issueList.title} text={issueList.text} />
       <List>
         {issueList.items.map(({ id, ...card }) => (

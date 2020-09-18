@@ -7,6 +7,7 @@ import {
   Footer,
   Playlist,
   IssueList,
+  FollowUp,
 } from 'ui'
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <About />
         <Playlist />
         <IssueList />
+        <FollowUp />
       </Container>
       <Footer />
     </>

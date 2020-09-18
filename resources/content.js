@@ -1,28 +1,33 @@
-const idGen = () => '_' + Math.random().toString(36).substr(2, 9)
+import {
+  TelegramIcon as Telegram,
+  GithubIcon as Github,
+} from 'ui'
+
+const generateId = () => '_' + Math.random().toString(36).substr(2, 9)
 
 export const menu = [
   {
-    id: idGen(),
+    id: generateId(),
     title: 'O que é?',
-    url: '#o-que-e',
+    url: '#sobre',
   },
   {
-    id: idGen(),
+    id: generateId(),
     title: 'Como participar',
     url: '#como-participar',
   },
   {
-    id: idGen(),
+    id: generateId(),
     title: 'Contribua',
     url: '#contribua',
   },
   {
-    id: idGen(),
+    id: generateId(),
     title: 'Acompanhe',
     url: '#acompanhe',
   },
   {
-    id: idGen(),
+    id: generateId(),
     title: 'Conheça a Lukin Co.',
     url: 'https://lukin.co',
   },
@@ -32,12 +37,13 @@ export const hero = {
   title: 'Semana Hacktoberfest na Lukin Co.',
   text: 'Quer participar da Hacktoberfest mas não sabe por onde começar? A Lukin preparou um guia especial para você!',
   cta: 'Saiba mais',
+  ctaUrl: '#sobre',
   alt: 'A ilustração mostra uma pessoa vestida de rosa, usando um laptop com o logotipo da Lukin. Ao fundo um quadro branco com linhas coloridas intercalando as cores rosa e amarelo.',
 }
 
 export const about = [
   {
-    id: 'o-que-e',
+    id: 'sobre',
     invert: false,
     title: 'O que é?',
     text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro a 31 de Outubro.',
@@ -59,15 +65,15 @@ export const playlist = {
     },
     {
       title: '#02 Iniciando com Git',
-      videoId: 'yb-fBApqWSw',
+      videoId: null,
     },
     {
       title: '#03 Conexão Git - Github',
-      videoId: 'r-8isv_TnVA',
+      videoId: null,
     },
     {
       title: '#04 Como contribuir em projetos',
-      videoId: 'my9wmfOkIP4',
+      videoId: null,
     },
   ],
 }
@@ -77,7 +83,7 @@ export const issueList = {
   text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]]. Se liga nessa seleção preparada especialmente para a semana Hacktoberfest:',
   items: [
     {
-      id: idGen(),
+      id: generateId(),
       repo: 'lukin/timerlab',
       position: '#04',
       title: 'Notification and sound alert',
@@ -87,7 +93,7 @@ export const issueList = {
       url: 'https://lukin.co',
     },
     {
-      id: idGen(),
+      id: generateId(),
       repo: 'lukin/timerlab',
       position: '#04',
       title: 'Notification and sound alert',
@@ -97,7 +103,7 @@ export const issueList = {
       url: 'https://lukin.co',
     },
     {
-      id: idGen(),
+      id: generateId(),
       repo: 'lukin/timerlab',
       position: '#04',
       title: 'Notification and sound alert',
@@ -107,7 +113,7 @@ export const issueList = {
       url: 'https://lukin.co',
     },
     {
-      id: idGen(),
+      id: generateId(),
       repo: 'lukin/timerlab',
       position: '#04',
       title: 'Notification and sound alert',
@@ -133,3 +139,24 @@ export const social = [
     url: 'https://instagram.com/lukinco',
   },
 ]
+
+export const followUp = {
+  title: 'Acompanhe',
+  text: 'Quer ficar por dentro de tudo que vai rolar na semana hacktoberfest da Lukin Co? Para facilitar isso, nós vamos disponibilizar um canal no telegram para comunicar qualquer novidade sobre a hacktoberfest. Além disso, nós deixamos o código deste site aberto no Github e você pode através das issues, enviar sugestões, dúvidas ou até mesmo reportar algum erro no nosso site.',
+  cards: [
+    {
+      id: 'telegram',
+      text: 'Canal no Telegram para novidades',
+      cta: 'Quero participar',
+      ctaUrl: '#',
+      icon: Telegram,
+    },
+    {
+      id: 'github',
+      text: 'Repositório do site para dúvidas ou sugestões',
+      cta: 'Ver repositório',
+      ctaUrl: '#',
+      icon: Github,
+    },
+  ],
+}

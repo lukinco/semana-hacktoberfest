@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { darken, rgba } from 'polished'
+import { rgba } from 'polished'
 
-import { media } from 'ui'
+import { Button, media } from 'ui'
 import { hero } from 'resources/content'
 
 export const Hero = () => {
@@ -10,7 +10,7 @@ export const Hero = () => {
       <div>
         <Title>{hero.title}</Title>
         <Text>{hero.text}</Text>
-        <CallToAction>{hero.cta}</CallToAction>
+        <Button as='a' href={hero.ctaUrl}>{hero.cta}</Button>
       </div>
       <Illustration src='./hero.svg' alt={hero.alt} />
     </Wrapper>
@@ -50,22 +50,4 @@ const Text = styled.p`
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   line-height: 1.5;
   color: ${({ theme }) => rgba(theme.colors.text, 0.5)};
-`
-
-const CallToAction = styled.a`
-  text-decoration: none;
-  font-size: clamp(1.4rem, 4vw, 1.8rem);
-  font-weight: 600;
-  border-radius: .3rem;
-  display: inline-block;
-  padding: 1.5rem 3rem;
-  transition: background-color .25s ease;
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.text};
-  background-color: ${({ theme }) => theme.colors.primary};
-
-  &:focus,
-  &:hover {
-    background-color: ${({ theme }) => darken(0.15, theme.colors.primary)};
-  }
 `

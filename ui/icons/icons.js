@@ -31,3 +31,21 @@ export const LangIcon = styled(BaseIcon)`
   height: 1.9rem;
   background-image: ${({ lang }) => `url('./icons/ic-${lang}.svg')`};
 `
+
+export const TelegramIcon = styled(BaseIcon)`
+  width: 5.7rem;
+  height: 5rem;
+  background-image: url('./icons/ic-telegram.svg');
+`
+
+export const GithubIcon = styled(BaseIcon)`
+  width: 4.1rem;
+  height: 4.4rem;
+  background-image: url('./icons/ic-github.svg');
+`
+
+export const YoutubeIcon = styled(BaseIcon)`
+  width: 5rem;
+  height: 4.95rem;
+  background-image: url('./icons/ic-youtube.svg');
+`
