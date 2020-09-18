@@ -49,3 +49,9 @@ export const YoutubeIcon = styled(BaseIcon)`
   height: 4.95rem;
   background-image: url('./icons/ic-youtube.svg');
 `
+
+export const EmptyIssuesIcon = styled(BaseIcon)`
+  width: 21.9rem;
+  height: 15.8rem;
+  background-image: url('./icons/ic-empty-issues.svg');
+`

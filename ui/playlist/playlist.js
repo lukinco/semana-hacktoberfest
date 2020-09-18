@@ -9,9 +9,9 @@ export const Playlist = () => {
     <Wrapper>
       <Title>{playlist.title}</Title>
       <Grid>
-        {playlist.items.map(({ title, videoId }) => (
+        {playlist.items.map(({ id, title, videoId }) => (
           <Video
-            key={videoId}
+            key={id}
             title={title}
             videoId={videoId}
           />

@@ -16,7 +16,7 @@ export const CTABox = ({ text, icon: Icon, cta, ctaUrl }) => {
 
 CTABox.propTypes = {
   text: t.string.isRequired,
-  icon: t.node.isRequired,
+  icon: t.elementType.isRequired,
   cta: t.string.isRequired,
   ctaUrl: t.string.isRequired,
 }

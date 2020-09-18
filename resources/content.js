@@ -60,18 +60,22 @@ export const playlist = {
   title: 'Playlist de vídeos',
   items: [
     {
+      id: generateId(),
       title: '#01 Introdução',
-      videoId: 'EG-UFuYmQCA',
+      videoId: null,
     },
     {
+      id: generateId(),
       title: '#02 Iniciando com Git',
       videoId: null,
     },
     {
+      id: generateId(),
       title: '#03 Conexão Git - Github',
       videoId: null,
     },
     {
+      id: generateId(),
       title: '#04 Como contribuir em projetos',
       videoId: null,
     },
@@ -148,14 +152,14 @@ export const followUp = {
       id: 'telegram',
       text: 'Canal no Telegram para novidades',
       cta: 'Quero participar',
-      ctaUrl: '#',
+      ctaUrl: 'https://t.me/semana_hacktoberfest',
       icon: Telegram,
     },
     {
       id: 'github',
       text: 'Repositório do site para dúvidas ou sugestões',
       cta: 'Ver repositório',
-      ctaUrl: '#',
+      ctaUrl: 'https://github.com/lukinco/semana-hacktoberfest',
       icon: Github,
     },
   ],

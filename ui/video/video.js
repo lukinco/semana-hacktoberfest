@@ -28,7 +28,7 @@ export const Video = ({ title, videoId }) => {
 
 Video.propTypes = {
   title: t.string.isRequired,
-  videoId: t.string.isRequired,
+  videoId: t.string,
 }
 
 const VideoWrapper = styled.div`

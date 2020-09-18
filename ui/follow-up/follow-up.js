@@ -9,6 +9,7 @@ export const FollowUp = () => {
       <TextBox
         title={followUp.title}
         text={followUp.text}
+        invert
       />
       <Wrapper>
         {followUp.cards.map(({ id, text, icon, cta, ctaUrl }) => (

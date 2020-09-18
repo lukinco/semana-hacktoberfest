@@ -24,7 +24,7 @@ export const TextBox = ({ id, title, text, invert }) => {
 }
 
 TextBox.propTypes = {
-  id: t.string.isRequired,
+  id: t.string,
   title: t.string.isRequired,
   text: t.string.isRequired,
   invert: t.bool,
