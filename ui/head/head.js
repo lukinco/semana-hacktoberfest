@@ -14,18 +14,18 @@ const HeadComponent = () => {
       <meta property='og:url' content='https://hacktoberfest.lukin.co' />
       <meta property='og:type' content='website' />
       <meta property='og:title' content='Semana Hacktoberfest' />
-      <meta property='og:image' content='https://hacktoberfest.lukin.co/logo-vertical.png' />
-      <meta property='og:image:alt' content='' />
-      <meta property='og:description' content='' />
+      <meta property='og:image' content='https://hacktoberfest.lukin.co/og-image.png' />
+      <meta property='og:image:alt' content='A imagem com fundo preto tem ao lado esquerdo o texto Semana Hacktoberfest na Lukin Co. Ao lado direito uma ilustração mostra uma pessoa vestida de rosa, usando um laptop com o logotipo da Lukin. Ao fundo um quadro branco com linhas coloridas intercalando as cores rosa e amarelo.' />
+      <meta property='og:description' content='Semana Hacktoberfest na Lukin Co. Saiba como participar...' />
       <meta property='og:locale' content='pt_BR' />
 
       <meta name='twitter:card' content='summary' />
       <meta name='twitter:site' content='@site_account' />
       <meta name='twitter:url' content='https://hacktoberfest.lukin.co/' />
       <meta name='twitter:title' content='Semana Hacktoberfest' />
-      <meta name='twitter:description' content='' />
-      <meta name='twitter:image' content='https://hacktoberfest.lukin.co/logo-vertical.png' />
-      <meta name='twitter:image:alt' content='' />
+      <meta name='twitter:description' content='Semana Hacktoberfest na Lukin Co. Saiba como participar...' />
+      <meta name='twitter:image' content='https://hacktoberfest.lukin.co/og-image.png' />
+      <meta name='twitter:image:alt' content='A imagem com fundo preto tem ao lado esquerdo o texto Semana Hacktoberfest na Lukin Co. Ao lado direito uma ilustração mostra uma pessoa vestida de rosa, usando um laptop com o logotipo da Lukin. Ao fundo um quadro branco com linhas coloridas intercalando as cores rosa e amarelo.' />
 
       <link rel='apple-touch-icon' sizes='76x76' href='/apple-icon-76x76.png' />
       <link rel='apple-touch-icon' sizes='120x120' href='/apple-icon-120x120.png' />
