@@ -61,22 +61,22 @@ export const playlist = {
   items: [
     {
       id: generateId(),
-      title: '#01 Introdução',
+      title: '',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '#02 Iniciando com Git',
+      title: '',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '#03 Conexão Git - Github',
+      title: '',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '#04 Como contribuir em projetos',
+      title: '',
       videoId: null,
     },
   ],
