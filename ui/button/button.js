@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { darken } from 'polished'
+import { motion } from 'framer-motion'
 
 import { media } from 'ui'
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   appearance: none;
   text-decoration: none;
   font-size: clamp(1.4rem, 4vw, 1.8rem);

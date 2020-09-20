@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 import { darken, rgba } from 'polished'
+import { motion } from 'framer-motion'
 
 import { media } from 'ui'
 import { menu } from 'resources/content'
 
 export const Header = () => {
   return (
-    <Wrapper>
+    <Wrapper
+      initial='hidden'
+      animate='visible'
+      variants={motionWrapper}
+    >
       <div><Logo src='./hacktoberfest-black.svg' /></div>
       <Navigation>
         {menu.map(({ title, url }) => (
@@ -17,7 +22,19 @@ export const Header = () => {
   )
 }
 
-const Wrapper = styled.header`
+const motionWrapper = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      duration: 0.6,
+    },
+  },
+}
+
+const Wrapper = styled(motion.header)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,15 +70,11 @@ const NavItem = styled.a`
   text-decoration: none;
   font-weight: 600;
   font-size: 1.6rem;
-  padding-right: 2.5rem;
+  margin-right: 2.5rem;
   position: relative;
   transition: color .25s ease;
   color: ${({ theme }) => theme.colors.text};
 
-  &:focus,
-  &:hover {
-    color: ${({ theme }) => darken(0.15, theme.colors.text)};
-  }
 
   &:last-child {
     padding-left: 2.5rem;
@@ -95,5 +108,23 @@ const NavItem = styled.a`
     ${media.lessThan('lg')`
       display: none;
     `}
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      height: .1rem;
+      width: 0;
+      bottom: -.5rem;
+      left: 0;
+      background: ${({ theme }) => theme.colors.text};
+      transform: rotate(-1deg);
+      transition: 100ms;
+    }
+
+    &:hover{
+      &:before  {
+        width: 100%;
+      }
+    }
   }
 `

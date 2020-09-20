@@ -61,22 +61,32 @@ export const playlist = {
   items: [
     {
       id: generateId(),
-      title: '',
+      title: '#00 - Live de apresentação da semana',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '',
+      title: '#01 - Conhecendo o GitHub e criando seu primeiro repo',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '',
+      title: '#02 - Desvendando o repositório',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '',
+      title: '#03 - Conexão Git - GitHub',
+      videoId: null,
+    },
+    {
+      id: generateId(),
+      title: '#04 - Como contribuir com projetos open source',
+      videoId: null,
+    },
+    {
+      id: generateId(),
+      title: '#05 - Conclusão da semana',
       videoId: null,
     },
   ],
@@ -84,7 +94,7 @@ export const playlist = {
 
 export const issueList = {
   title: 'Onde contribuir?',
-  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]]. Se liga nessa seleção preparada especialmente para a Hacktoberfest:',
+  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]].  Assim que começar a Hacktoberfest, nós iremos disponibilizar aqui as issues e nosso projetos para você contribuir.',
   items: [
     {
       id: generateId(),
