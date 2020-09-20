@@ -11,7 +11,7 @@ export const components = {
   github: <Link key='github' href='https://www.github.com/'>GitHub</Link>,
   fdaciuk: <Link key='@fdaciuk' href='https://twitter.com/fdaciuk'>@fdaciuk</Link>,
   beginner: <BoldText key='beginner'>iniciante</BoldText>,
-  advanced: <BoldText key='advanced'>Avançado</BoldText>,
+  advanced: <BoldText key='advanced'>avançado</BoldText>,
 }
 
 export const TextBox = ({ id, title, text, invert }) => {

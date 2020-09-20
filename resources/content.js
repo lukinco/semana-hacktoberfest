@@ -46,7 +46,7 @@ export const about = [
     id: 'sobre',
     invert: false,
     title: 'O que é?',
-    text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro a 31 de Outubro.',
+    text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro e termina em 31 de Outubro.',
   },
   {
     id: 'como-participar',
@@ -84,7 +84,7 @@ export const playlist = {
 
 export const issueList = {
   title: 'Onde contribuir?',
-  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]]. Se liga nessa seleção preparada especialmente para a semana Hacktoberfest:',
+  text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]]. Se liga nessa seleção preparada especialmente para a Hacktoberfest:',
   items: [
     {
       id: generateId(),
@@ -146,7 +146,7 @@ export const social = [
 
 export const followUp = {
   title: 'Acompanhe',
-  text: 'Quer ficar por dentro de tudo que vai rolar na semana hacktoberfest da Lukin Co? Para facilitar isso, nós vamos disponibilizar um canal no telegram para comunicar qualquer novidade sobre a hacktoberfest. Além disso, nós deixamos o código deste site aberto no Github e você pode através das issues, enviar sugestões, dúvidas ou até mesmo reportar algum erro no nosso site.',
+  text: 'Quer ficar por dentro de tudo que vai rolar na Semana Hacktoberfest da Lukin Co? Para facilitar isso, nós vamos disponibilizar um canal no Telegram para comunicar qualquer novidade sobre a Hacktoberfest. Além disso, nós deixamos o código deste site aberto no GitHub e você pode através das issues, enviar sugestões, dúvidas ou até mesmo reportar algum erro no nosso site.',
   cards: [
     {
       id: 'telegram',
