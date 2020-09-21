@@ -62,7 +62,7 @@ export const playlist = {
     {
       id: generateId(),
       title: '#00 - Live de apresentação da semana',
-      videoId: null,
+      videoId: '96vWdmGFn9U',
     },
     {
       id: generateId(),
