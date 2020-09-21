@@ -62,6 +62,7 @@ const Title = styled(motion.h2)`
   font-size: clamp(2.6rem, 7vw, 4.2rem);
   font-weight: 700;
   padding: 5rem 0 2rem;
+  max-width: 58rem;
 `
 
 const Text = styled(motion.p)`
