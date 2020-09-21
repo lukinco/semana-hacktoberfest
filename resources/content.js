@@ -46,7 +46,7 @@ export const about = [
     id: 'sobre',
     invert: false,
     title: 'O que é?',
-    text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. O evento inicia em 1 de Outubro e termina em 31 de Outubro.',
+    text: 'O [[hacktoberfest]] é um mês de celebração open source criado pela [[digitalocean]] em parceria com o [[github]]. Hacktoberfest é aberto a comunidade global e o objetivo é fomentar e incentivar a comunidade a contribuir com projetos de código aberto. Ao completar o desafio proposto, você ainda pode ganhar brindes exclusivos do evento (como uma Camiseta e adesivos da DO e GitHub). O evento inicia em 1 de Outubro e termina em 31 de Outubro.',
   },
   {
     id: 'como-participar',
