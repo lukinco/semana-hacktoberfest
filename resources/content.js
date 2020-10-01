@@ -67,26 +67,21 @@ export const playlist = {
     {
       id: generateId(),
       title: '#01 - Conhecendo o GitHub e criando seu primeiro repo',
-      videoId: null,
+      videoId: 'bjFLNE2AlYo',
     },
     {
       id: generateId(),
       title: '#02 - Desvendando o repositório',
+      videoId: 'Le8BxN4ZCtQ',
+    },
+    {
+      id: generateId(),
+      title: '#03 - Como contribuir com projetos open source',
       videoId: null,
     },
     {
       id: generateId(),
-      title: '#03 - Conexão Git - GitHub',
-      videoId: null,
-    },
-    {
-      id: generateId(),
-      title: '#04 - Como contribuir com projetos open source',
-      videoId: null,
-    },
-    {
-      id: generateId(),
-      title: '#05 - Conclusão da semana',
+      title: '#04 - Live de Conclusão da semana',
       videoId: null,
     },
   ],
