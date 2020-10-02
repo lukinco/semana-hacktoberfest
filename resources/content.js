@@ -77,7 +77,7 @@ export const playlist = {
     {
       id: generateId(),
       title: '#03 - Como contribuir com projetos open source',
-      videoId: null,
+      videoId: 'tPc2HRrAIyg',
     },
     {
       id: generateId(),
