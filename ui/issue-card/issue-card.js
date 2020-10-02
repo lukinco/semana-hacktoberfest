@@ -11,7 +11,6 @@ export const IssueCard = ({
   description,
   stars,
   lang,
-  url,
 }) => {
   return (
     <Card>
@@ -38,7 +37,6 @@ IssueCard.propTypes = {
   description: t.string.isRequired,
   stars: t.number.isRequired,
   lang: t.oneOf(['Javascript', 'ReScript']).isRequired,
-  url: t.string.isRequired,
 }
 
 const Card = styled.a`
