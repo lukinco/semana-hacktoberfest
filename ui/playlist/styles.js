@@ -1,27 +1,9 @@
 import styled from 'styled-components'
 import { lighten } from 'polished'
 
-import { Video, media } from 'ui'
-import { playlist } from 'resources/content'
+import { media } from 'ui'
 
-export const Playlist = () => {
-  return (
-    <Wrapper>
-      <Title>{playlist.title}</Title>
-      <Grid>
-        {playlist.items.map(({ id, title, videoId }) => (
-          <Video
-            key={id}
-            title={title}
-            videoId={videoId}
-          />
-        ))}
-      </Grid>
-    </Wrapper>
-  )
-}
-
-const Wrapper = styled.section`
+export const Wrapper = styled.section`
   padding: 6rem 10.5rem;
   background-color: ${({ theme }) => lighten(0.07, theme.colors.background)};
   margin-bottom: 19rem;
@@ -31,7 +13,7 @@ const Wrapper = styled.section`
   `}
 `
 
-const Title = styled.section`
+export const Title = styled.section`
   font-size: clamp(2.4rem, 4vw, 3.2rem);
   padding-left: 2.5rem;
   position: relative;
@@ -62,7 +44,7 @@ const Title = styled.section`
   `}
 `
 
-const Grid = styled.div`
+export const Grid = styled.div`
   display: grid;
   grid-gap: 6.5rem 11.5rem;
 

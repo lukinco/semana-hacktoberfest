@@ -1,21 +1,6 @@
 import styled from 'styled-components'
 
-import { YoutubeIcon } from 'ui'
-
-export const EmptyVideo = () => {
-  return (
-    <Wrapper>
-      <div>
-        <Content>
-          <YoutubeIcon />
-          <p>Disponível em breve</p>
-        </Content>
-      </div>
-    </Wrapper>
-  )
-}
-
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -52,7 +37,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Content = styled.div`
+export const Content = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;

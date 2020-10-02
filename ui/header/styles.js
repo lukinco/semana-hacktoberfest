@@ -1,28 +1,11 @@
 import styled from 'styled-components'
+
 import { darken, rgba } from 'polished'
 import { motion } from 'framer-motion'
 
 import { media } from 'ui'
-import { menu } from 'resources/content'
 
-export const Header = () => {
-  return (
-    <Wrapper
-      initial='hidden'
-      animate='visible'
-      variants={motionWrapper}
-    >
-      <div><Logo src='./hacktoberfest-black.svg' /></div>
-      <Navigation>
-        {menu.map(({ title, url }) => (
-          <NavItem key={title} href={url}>{title}</NavItem>
-        ))}
-      </Navigation>
-    </Wrapper>
-  )
-}
-
-const motionWrapper = {
+export const motionWrapper = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
@@ -34,7 +17,7 @@ const motionWrapper = {
   },
 }
 
-const Wrapper = styled(motion.header)`
+export const Wrapper = styled(motion.header)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,18 +38,18 @@ const Wrapper = styled(motion.header)`
   `}
 `
 
-const Logo = styled.img`
+export const Logo = styled.img`
   display: block;
   width: 100%;
   height: auto;
   max-width: 22rem;
 `
 
-const Navigation = styled.nav`
+export const Navigation = styled.nav`
   display: inline-flex;
 `
 
-const NavItem = styled.a`
+export const NavItem = styled.a`
   text-decoration: none;
   font-weight: 600;
   font-size: 1.6rem;

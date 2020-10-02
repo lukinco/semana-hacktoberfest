@@ -37,6 +37,8 @@
   "plugins": [],
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "import/namespace": "off",
+    "import/named": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "comma-dangle": [
       "error",

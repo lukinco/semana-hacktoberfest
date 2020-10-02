@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-
 import { TextBox } from 'ui'
 import { about } from 'resources/content'
+
+import { Wrapper } from './styles'
 
 export const About = () => {
   return (
@@ -18,9 +18,3 @@ export const About = () => {
     </Wrapper>
   )
 }
-
-const Wrapper = styled.section`
-  > * {
-    margin-bottom: 19rem;
-  }
-`

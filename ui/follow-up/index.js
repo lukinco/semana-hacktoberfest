@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-
-import { TextBox, CTABox, media } from 'ui'
+import { TextBox, CTABox } from 'ui'
 import { followUp } from 'resources'
+
+import { Wrapper } from './styles'
 
 export const FollowUp = () => {
   return (
@@ -25,16 +25,3 @@ export const FollowUp = () => {
     </div>
   )
 }
-
-const Wrapper = styled.div`
-  width: 100%;
-  max-width: 74rem;
-  margin: 0 auto;
-  padding: 8rem 0 13rem;
-
-  ${media.greaterThan('sm')`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  `}
-`

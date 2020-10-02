@@ -1,26 +1,9 @@
 import styled from 'styled-components'
 import { rgba } from 'polished'
 import { motion } from 'framer-motion'
+import { media } from 'ui'
 
-import { Button, media } from 'ui'
-import { hero } from 'resources/content'
-
-export const Hero = () => {
-  return (
-    <Wrapper>
-      <div>
-        <Title {...makeAnimation(0.6)}>
-          {hero.title}
-        </Title>
-        <Text {...makeAnimation(0.8)}>{hero.text}</Text>
-        <Button {...makeAnimation(0.9)} as={motion.a} href={hero.ctaUrl}>{hero.cta}</Button>
-      </div>
-      <Illustration {...makeAnimation(0.6)} src='./hero.svg' alt={hero.alt} />
-    </Wrapper>
-  )
-}
-
-const makeAnimation = delay => ({
+export const makeAnimation = delay => ({
   initial: 'hidden',
   animate: 'visible',
   variants: {
@@ -36,7 +19,7 @@ const makeAnimation = delay => ({
   },
 })
 
-const Wrapper = styled.section`
+export const Wrapper = styled.section`
   align-items: center;
   padding: 12rem 0 9rem;
 
@@ -49,7 +32,7 @@ const Wrapper = styled.section`
   `}
 `
 
-const Illustration = styled(motion.img)`
+export const Illustration = styled(motion.img)`
   display: none;
   width: 100%;
 
@@ -58,14 +41,14 @@ const Illustration = styled(motion.img)`
   `}
 `
 
-const Title = styled(motion.h2)`
+export const Title = styled(motion.h2)`
   font-size: clamp(2.6rem, 7vw, 4.2rem);
   font-weight: 700;
   padding: 5rem 0 2rem;
   max-width: 58rem;
 `
 
-const Text = styled(motion.p)`
+export const Text = styled(motion.p)`
   padding-bottom: 3rem;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   line-height: 1.5;
