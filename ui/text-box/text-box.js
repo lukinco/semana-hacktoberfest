@@ -2,7 +2,7 @@ import t from 'prop-types'
 import styled from 'styled-components'
 import { rgba } from 'polished'
 
-import { Link, BoldText } from 'ui'
+import { Link, BoldText, media } from 'ui'
 import { insertComponentsIntoText } from 'resources'
 
 export const components = {
@@ -53,7 +53,7 @@ const Title = styled.h3`
     background-color: ${({ theme }) => theme.colors.primary};
   }
 
-  ${({ invert }) => invert && `
+  ${({ invert }) => invert && media.greaterThan('md')`
     align-self: flex-end;
   `};
 `
