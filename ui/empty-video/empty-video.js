@@ -1,6 +1,6 @@
 import { YoutubeIcon } from 'ui'
 
-import { Wrapper, Content } from './styles'
+import { Wrapper, Content } from './empty-video.styles'
 
 export const EmptyVideo = () => {
   return (

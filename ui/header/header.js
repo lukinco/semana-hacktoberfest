@@ -1,6 +1,6 @@
 import { menu } from 'resources/content'
 
-import { motionWrapper, Wrapper, Logo, Navigation, NavItem } from './styles'
+import { motionWrapper, Wrapper, Logo, Navigation, NavItem } from './header.styles'
 
 export const Header = () => {
   return (

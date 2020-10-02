@@ -1,7 +1,7 @@
 import t from 'prop-types'
 
 import { EmptyVideo } from 'ui'
-import { Title, VideoWrapper } from './styles'
+import { Title, VideoWrapper } from './video.styles'
 
 export const Video = ({ title, videoId }) => {
   const videoUrl = videoId ? `https://www.youtube.com/embed/${videoId}` : null

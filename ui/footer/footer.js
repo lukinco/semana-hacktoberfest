@@ -1,7 +1,7 @@
 import { Container } from 'ui'
 import { social } from 'resources/content'
 
-import { Wrapper, Content, Copyright, Social } from './styles'
+import { Wrapper, Content, Copyright, Social } from './footer.styles'
 
 export const Footer = () => {
   return (

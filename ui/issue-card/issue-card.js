@@ -1,7 +1,7 @@
 import t from 'prop-types'
 
 import { BoxIcon, StarIcon, LangIcon } from 'ui'
-import { Card, Header, Repo, Position, Content, Title, Text, Footer, Info } from './styles'
+import { Card, Header, Repo, Position, Content, Title, Text, Footer, Info } from './issue-card.styles'
 
 export const IssueCard = ({
   repo,

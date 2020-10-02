@@ -1,7 +1,7 @@
 import { TextBox, IssueCard, EmptyIssuesIcon } from 'ui'
 import { issueList } from 'resources/content'
 
-import { Wrapper, List, Empty, Text } from './styles'
+import { Wrapper, List, Empty, Text } from './issue-list.styles'
 
 export const IssueList = () => {
   return (

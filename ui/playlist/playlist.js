@@ -2,7 +2,7 @@
 import { playlist } from 'resources/content'
 import { Video } from 'ui'
 
-import { Wrapper, Title, Grid } from './styles'
+import { Wrapper, Title, Grid } from './playlist.styles'
 
 export const Playlist = () => {
   return (

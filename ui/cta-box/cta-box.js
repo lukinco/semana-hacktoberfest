@@ -1,7 +1,7 @@
 import t from 'prop-types'
 
 import { Button } from 'ui'
-import { Wrapper, Text } from './styles'
+import { Wrapper, Text } from './cta-box.styles'
 
 export const CTABox = ({ text, icon: Icon, cta, ctaUrl }) => {
   return (

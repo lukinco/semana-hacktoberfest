@@ -1,7 +1,7 @@
 import { TextBox, CTABox } from 'ui'
 import { followUp } from 'resources'
 
-import { Wrapper } from './styles'
+import { Wrapper } from './follow-up.styles'
 
 export const FollowUp = () => {
   return (

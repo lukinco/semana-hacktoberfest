@@ -1,7 +1,7 @@
 import { hero } from 'resources/content'
 import { motion } from 'framer-motion'
 
-import { Wrapper, Title, Text, Illustration, makeAnimation } from './styles'
+import { Wrapper, Title, Text, Illustration, makeAnimation } from './hero.styles'
 import { Button } from 'ui'
 
 export const Hero = () => {

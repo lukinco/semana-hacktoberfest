@@ -3,7 +3,7 @@ import t from 'prop-types'
 import { Link, BoldText } from 'ui'
 import { insertComponentsIntoText } from 'resources'
 
-import { Wrapper, Title, Text } from './styles'
+import { Wrapper, Title, Text } from './text-box.styles'
 
 export const components = {
   hacktoberfest: <Link key='hacktoberfest' href='https://hacktoberfest.digitalocean.com/'>Hacktoberfest</Link>,

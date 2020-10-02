@@ -1,7 +1,7 @@
 import { TextBox } from 'ui'
 import { about } from 'resources/content'
 
-import { Wrapper } from './styles'
+import { Wrapper } from './about.styles'
 
 export const About = () => {
   return (
