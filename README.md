@@ -11,15 +11,6 @@
 <br/>
 <br/>
 
-## Contribua
-
-- Fork este repositório
-- Crie uma feature branch: git checkout -b my-new-feature. 
-- `Comite` suas alterações: git commit -m 'Add some feature'. 
-- Envie as alterações para o git: git push origin my-new-feature.
-
-Depois de mergearmos seu `PR` você pode excluir sua branch.
-
 ## Setup
 
 ### Development
@@ -37,6 +28,10 @@ yarn build
 # or
 npm run build
 ```
+
+## Contribua
+[Contributing](https://github.com/lukinco/semana-hacktoberfest/blob/master/CONTRIBUTING.md)
+
 
 ## License
 
