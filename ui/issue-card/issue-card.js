@@ -14,18 +14,16 @@ export const IssueCard = ({
   url,
 }) => {
   return (
-    <Card>
+    <Card href={url} target='_blank' rel='noopener noreferrer'>
       <Header>
         <Repo><BoxIcon /> {repo}</Repo>
-        <Position>{position}</Position>
+        <Position>#{position < 10 ? `0${position}` : position}</Position>
       </Header>
       <Content>
         <Title>{title}</Title>
-        <Text>{description}</Text>
       </Content>
       <Footer>
         <Info><StarIcon />  {stars}</Info>
-        <Info><LangIcon lang={lang.toLowerCase()} />{lang}</Info>
       </Footer>
     </Card>
   )
@@ -33,15 +31,15 @@ export const IssueCard = ({
 
 IssueCard.propTypes = {
   repo: t.string.isRequired,
-  position: t.string.isRequired,
+  position: t.number.isRequired,
   title: t.string.isRequired,
-  description: t.string.isRequired,
   stars: t.number.isRequired,
-  lang: t.oneOf(['Javascript', 'ReScript']).isRequired,
   url: t.string.isRequired,
 }
 
 const Card = styled.a`
+  color: inherit;
+  text-decoration: none;
   padding: 3.5rem;
   background-color: ${({ theme }) => lighten(0.07, theme.colors.background)};
   transition: background-color .25s ease;

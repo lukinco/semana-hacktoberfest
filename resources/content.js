@@ -82,7 +82,7 @@ export const playlist = {
     {
       id: generateId(),
       title: '#04 - Live de Conclusão da semana',
-      videoId: null,
+      videoId: 'ZiuHUwZDiH4',
     },
   ],
 }
@@ -90,47 +90,15 @@ export const playlist = {
 export const issueList = {
   title: 'Onde contribuir?',
   text: 'Para facilitar o inicio da sua jornada open source, a Lukin selecionou uma lista de issues de projetos open source, com diversos níveis, de [[beginner]] a [[advanced]].  Assim que começar a Hacktoberfest, nós iremos disponibilizar aqui as issues e nosso projetos para você contribuir.',
-  items: [
-    {
-      id: generateId(),
-      repo: 'lukin/timerlab',
-      position: '#04',
-      title: 'Notification and sound alert',
-      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
-      stars: 100,
-      lang: 'ReScript',
-      url: 'https://lukin.co',
-    },
-    {
-      id: generateId(),
-      repo: 'lukin/timerlab',
-      position: '#04',
-      title: 'Notification and sound alert',
-      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
-      stars: 100,
-      lang: 'ReScript',
-      url: 'https://lukin.co',
-    },
-    {
-      id: generateId(),
-      repo: 'lukin/timerlab',
-      position: '#04',
-      title: 'Notification and sound alert',
-      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
-      stars: 100,
-      lang: 'Javascript',
-      url: 'https://lukin.co',
-    },
-    {
-      id: generateId(),
-      repo: 'lukin/timerlab',
-      position: '#04',
-      title: 'Notification and sound alert',
-      description: 'This app is very useful maybe local notification and sound alert after finish run time is more useful.',
-      stars: 100,
-      lang: 'ReScript',
-      url: 'https://lukin.co',
-    },
+  repos: [
+    'vmarcosp/covidbr-app',
+    'lukinco/semana-hacktoberfest',
+    'lukinco/timerlab',
+    'fdaciuk/hmh',
+    'fdaciuk/react-trianglify',
+    'fdaciuk/use-timer',
+    'fdaciuk/most-voted',
+    'lukinco/adonis-apollo-server',
   ],
 }
 
