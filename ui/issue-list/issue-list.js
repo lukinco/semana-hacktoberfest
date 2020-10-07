@@ -47,7 +47,7 @@ export const IssueList = () => {
     <Wrapper id='contribua'>
       <TextBox title={issueList.title} text={issueList.text} />
       <List>
-        {cards.length && cards.map(({ id, ...card }, index) => (
+        {!!cards.length && cards.map(({ id, ...card }, index) => (
           <IssueCard key={id} position={index + 1} {...card} />
         ))}
       </List>
