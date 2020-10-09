@@ -91,7 +91,7 @@ const Text = styled.p`
 const Footer = styled.footer`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 `
 
 const Info = styled.span`
