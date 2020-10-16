@@ -1,23 +1,32 @@
 import styled from 'styled-components'
 import { darken, rgba } from 'polished'
-import { motion } from 'framer-motion'
+import { motion, useViewportScroll, useTransform } from 'framer-motion'
 
 import { media } from 'ui'
 import { menu } from 'resources/content'
 
 export const Header = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const headerYColor = useTransform(
+    scrollYProgress,
+    [0, 0.2],
+    ["#000", "#121212"]
+  );
   return (
     <Wrapper
       initial='hidden'
       animate='visible'
       variants={motionWrapper}
+      style={{backgroundColor: headerYColor}}
     >
-      <div><Logo src='./hacktoberfest-black.svg' /></div>
-      <Navigation>
-        {menu.map(({ title, url }) => (
-          <NavItem key={title} href={url}>{title}</NavItem>
-        ))}
-      </Navigation>
+      <div>
+        <div><Logo src='./hacktoberfest-black.svg' /></div>
+        <Navigation>
+          {menu.map(({ title, url }) => (
+            <NavItem key={title} href={url}>{title}</NavItem>
+          ))}
+        </Navigation>
+      </div>
     </Wrapper>
   )
 }
@@ -37,18 +46,17 @@ const motionWrapper = {
 const Wrapper = styled(motion.header)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 12rem;
   padding: 4rem 1.5rem;
   width: 100%;
-  max-width: 134.5rem;
+  // max-width: 134.5rem;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1;
-  background-color: ${({ theme }) => theme.colors.background};
 
   ${media.lessThan('md')`
     height: 8rem;
